@@ -1,14 +1,29 @@
-##配置Aira2
-####1.首先去Github搜索[aira2](https://github.com/aria2/aria2/releases),并下载
+## 配置Aira2
+
+### 1.Github搜索[aira2](https://github.com/aria2/aria2/releases),并下载
+
 ![截图](./Screen/Github_aira2.png)
-####2.下载下来的文件中我们只需要使用aira2.exe文件即可,同时新建一个文件夹,并新建四个文件
+
+### 2.下载aira2.exe文件,新建四个文件
+
 ![](./Screen/Aira2List.jpg)
-1. air2.conf (配置文件)
-2. Aria2.log (日志文件，空文件就行)
-3. aria2.session (下载历史，空文件就行)
-4. HideRun.vbs （隐藏cmd窗口运行用到的）
-####3.文件配置
-aria2.conf
+
+####  1.air2.conf (配置文件)
+
+#### 2.Aria2.log (日志文件，空文件就行)
+
+####  3.aria2.session (下载历史，空文件就行)
+
+#### 4.HideRun.vbs （隐藏cmd窗口运行用到的）
+
+
+
+### 3.文件配置
+
+
+
+#### aria2.conf
+
 ```xml
 dir=E:\Aira2Tool\Downloads\
 log=E:\Aira2Tool\Aira2\Aria2.log
@@ -199,11 +214,17 @@ HideRun.vbs
 CreateObject("WScript.Shell").Run "E:\Aira2Tool\Aira2\aria2c.exe --conf-path=aria2.conf",0
 ```
 >E:\Aira2Tool\Aira2\aria2c.exe 改为你的aria2c.exe的绝对路径
-####4.使用
-1.首先在谷歌浏览器或火狐浏览器上安装插件baiduexporter
+
+
+
+### 4.使用
+
+
+
+#### 1. 首先在谷歌浏览器或火狐浏览器上安装插件baiduexporter
 ![](./Screen/baiduexporter.jpg)
-2.双击HideRun.vbs(必须先点击此脚本才可以)
-3.管理Aria 2 下载任务
+#### 2.双击HideRun.vbs(必须先点击此脚本才可以)
+#### 3.管理Aria 2 下载任务
 . 打开Aria2 的[WebUI](http://aria2c.com/)
 . 然后再页面的设置中将JSON-RPC Path设置为http://localhost:6800/jsonrpc
 . 使用baiduexporter插件
@@ -211,5 +232,7 @@ CreateObject("WScript.Shell").Run "E:\Aira2Tool\Aira2\aria2c.exe --conf-path=ari
 . 使用网页管理下载
 ![](./Screen/aira2download.jpg)
 
-####5.其它
-同文件夹下有配置好的Aira2.7z压缩包
+### 5.其它
+
+同文件夹下有配置好的Aira2.7z压缩包，可以直接使用
+
